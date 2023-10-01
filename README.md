@@ -4,6 +4,12 @@
 * [User Experience Design (UX)](#User-Experience-Design)
   * [User stories](#User-Stories)
   * [Structure](#Structure)
+* [Design](#Design)
+  * [Colour Scheme](#Colour-Scheme)
+  * [Typography](#Typography)
+  * [Imagery](#Imagery)
+  * [Wireframes](#Wireframes)
+* [Technologies](#Technologies)
 
 
 ## Purpose
@@ -29,4 +35,34 @@ As a **(role)** I can **(capability)**, so that **(received benefit)**
     - Bootstrap framework will be used to make the website responsive on different devices and display organised content.
     All pages will be responsive and the layouts will change dependant on screen size. This is to ensure content flow is appealing, images are displayed properly and that the content is not shrunk side by side so small taht it is unreadable.<br>
 
-    - All pages will contain a Footer element with Social Media links. The icons used will be from [Font Awesome](https://fontawesome.com/). There are references below in the Technologies section of this document.<br>
+    - All pages will contain a Footer element with Social Media links. The icons used will be from [Font Awesome](https://fontawesome.com). There are references below in the Technologies section of this document.<br>
+
+-   ### Design
+    -   #### Colour Scheme
+
+    -   #### Typography
+
+    -   #### Imagery
+        - Icons used for skills display are taken from [Devicon](https://devicon.dev)
+
+    -   #### Wireframes
+
+-   ## Technologies
+    * HTML
+	    * This project uses HTML as the main language used to complete the structure of the Website.
+    * CSS
+        * This project uses custom written CSS to style the Website.
+    * [Bootstrap](https://getbootstrap.com)
+        * This is used as frontend framework to display the content in an organized way.
+    * [Google Fonts](https://fonts.google.com/)
+	    * Google fonts are used throughout the project to import the *Roboto* and *Lato* fonts.
+    * [GitHub](https://github.com/)
+	    * GithHub is the hosting site used to store the source code for the Website.
+    * [Git](https://git-scm.com/)
+	    * Git is used as version control software to commit and push code to the GitHub repository where the source code is stored.
+    * [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+	    * Google chromes built in developer tools are used to inspect page elements and help debug issues with the site layout and test different CSS styles.
+    * [Mozilla Firefox Developer Tools](https://firefox-dev.tools/)
+	    * Mozilla Firefox built in developer tools are used to inspect page elements and help debug issues with the site layout and test different CSS styles.
+    * [Coolors](https://coolors.co/)
+        * This was used to select color palette.
