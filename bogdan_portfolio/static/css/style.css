@@ -1,0 +1,14 @@
+/* set font for all elements */
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+/* set font for heading elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
