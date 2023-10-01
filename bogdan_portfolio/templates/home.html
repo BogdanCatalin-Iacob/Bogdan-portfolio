@@ -19,10 +19,12 @@
                     <ul class="list-inline menu-container">
                         {% for skill in skills['skills'] %}
                             <li class="col-3 col-sm-2 list-inline-item">
-                                <article class="card">
-                                    <img src="{{ skill['img'] }}" alt="{{ skill['name'] }}">
-                                    <p>{{ skill['name'] }}</p>
-                                </article>
+                                <a href="{{ skill['site'] }} " target="_blank" aria-label="Opens {{ skill['name'] }} page in a new tab">
+                                    <article class="card">
+                                        <img src="{{ skill['img'] }}" alt="{{ skill['name'] }}">
+                                        <p>{{ skill['name'] }}</p>
+                                    </article>
+                                </a>
                             </li>
                         {% endfor %}
                     </ul>
