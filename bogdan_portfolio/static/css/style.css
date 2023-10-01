@@ -46,8 +46,15 @@ h6 {
     -webkit-transition: all .5s ease-in-out;
 }
 .name {
-    font-weight: 100;
+    font-weight: 300;
     font-size: 3rem;
     color: var(--color-white);
     margin-top: 2rem;
+}
+
+.title {
+    font-weight: 200;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
