@@ -20,6 +20,7 @@ As a **(role)** I can **(capability)**, so that **(received benefit)**
 | 1 |   Owner   | Display my skills  | Show them to others  |
 | 2 |   Owner   | Display my projects  | Show the to others  |
 | 3 |   Owner   | Upload my CV  | Make it available for download  |
+| 4 |   User   | Easily get in contact   | Ask questions  |
 
 -   ### Structure
 
@@ -28,4 +29,4 @@ As a **(role)** I can **(capability)**, so that **(received benefit)**
     - Bootstrap framework will be used to make the website responsive on different devices and display organised content.
     All pages will be responsive and the layouts will change dependant on screen size. This is to ensure content flow is appealing, images are displayed properly and that the content is not shrunk side by side so small taht it is unreadable.<br>
 
-    - All pages will contain a Footer element with Social Media links. The icons used will be from [Font Awesome](https://fontawesome.com/)
+    - All pages will contain a Footer element with Social Media links. The icons used will be from [Font Awesome](https://fontawesome.com/). There are references below in the Technologies section of this document.<br>
