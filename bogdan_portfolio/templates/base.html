@@ -29,6 +29,10 @@
         rel="stylesheet">
     <!--end google fonts-->
 
+    <!--custom css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!--end custom css-->
+
     <title>Bogdan Iacob</title>
 </head>
 
@@ -52,6 +56,24 @@
             </div>
         </nav>
         <!--end navbar-->
+
+        <!--profile header-->
+        <section>
+            <div class="row">
+                <img src="{{ url_for('static', filename='images/bogdan_no_background.webp') }}"
+                    alt="Image of Bogdan Iacob" class="col-md-4 profile-photo">
+                <div class="col-md-8">
+                    <div class="row bg-color-name-title">
+                        <div class="col heading">
+                            <h1 class="name">Bogdan Iacob</h1>
+                            <h2 class="title">Full Stack Developer</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end profile header-->
+
     </header>
 
     <section>

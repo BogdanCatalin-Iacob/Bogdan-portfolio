@@ -38,3 +38,10 @@ h6 {
 .bg-color-name-title {
     background-color: var(--color-orange);
 }
+
+.profile-photo {
+    min-height: 20rem;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
