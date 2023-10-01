@@ -3,16 +3,32 @@
 {% block content %}
 <!--profile header-->
 <section>
-    <div class="row">
+    <div class="row g-0">
         <img src="{{ url_for('static', filename='images/bogdan_no_background.webp') }}"
             alt="Image of Bogdan Iacob" class="col-md-4 profile-photo">
         <div class="col-md-8">
-            <div class="row bg-color-name-title">
+            <div class="row g-0 bg-color-name-title">
                 <div class="col heading">
                     <h1 class="name">Bogdan Iacob</h1>
                     <h2 class="title">Full Stack Developer</h2>
                 </div>
             </div>
+            <!-- skills icons -->
+            <div class="row g-0">
+                <div class="col">
+                    <ul class="list-inline menu-container">
+                        {% for skill in skills['skills'] %}
+                            <li class="col-3 col-sm-2 list-inline-item">
+                                <article class="card">
+                                    <img src="{{ skill['img'] }}" alt="{{ skill['name'] }}">
+                                    <p>{{ skill['name'] }}</p>
+                                </article>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <!-- end skills icons -->
         </div>
     </div>
 </section>

@@ -58,3 +58,18 @@ h6 {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+/* close the gaps between skills cards */
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
+
+.menu-container {
+    font-size: 0;
+}
+
+ul li {
+    font-size: 1rem;
+    padding: 0;
+}
+/* end gap */
