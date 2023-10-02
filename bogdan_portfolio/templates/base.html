@@ -62,11 +62,56 @@
         <!--end navbar-->
     </header>
 
-    {% block content %}
-    {% endblock %}
+    <!-- main content -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <!-- end main -->
 
     <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- CV download -->
+                <div class="col-sm-4 text-center">
+                    <h5>Download</h5>
+                    <p class="inline-block">
+                        Need a printable version of my CV?
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-download" aria-hidden="true"> Download it</i>
+                            <span class="sr-only">Download link.</span>
+                        </a>
+                    </p>
+                </div>
+                <!-- end CV download -->
 
+                <!-- social links -->
+                <div class="col-sm-4 text-center">
+                    <h5>Social</h5>
+                    <ul class="list-inline socila-links">
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/bogdan-iacob-21291b68" target="_blank"
+                                rel="noopener noreferrer" aria-label="Open LinkedIn page in a different tab">
+                                <div class="social-link">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                                        alt="LinkedIn icon">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/BogdanCatalin-Iacob" target="_blank"
+                                rel="noopener noreferrer" aria-label="Open GitHub page in a different tab">
+                                <div class="social-link">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                        alt="Github icon">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end social links -->
+            </div>
+        </div>
     </footer>
 </body>
 
