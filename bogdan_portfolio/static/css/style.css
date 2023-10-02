@@ -134,3 +134,7 @@ footer {
 .cv-pdf i:hover {
     color: var(--color-green);
 }
+
+#footer-details {
+    padding-top: .3rem;
+}
