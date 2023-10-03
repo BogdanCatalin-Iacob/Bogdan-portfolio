@@ -1,9 +1,70 @@
 {% extends "base.html" %}
 
 {% block content %}
-<!-- three reasons to hire me -->
-<section>
+<section class="container-fluid">
     <div class="row">
+        <!-- personal information -->
+        <div class="col-md-4 bg-color-personal-info">
+            <div class="row">
+                <div class="col">
+                    <h3 class="section-heading">Personal Info</h3>
+                </div>
+            </div>
+            <!-- name -->
+            <div class="personal-info-item">
+                <div class="key">
+                    Name:
+                </div>
+                <div class="value">
+                    <p>
+                        Bogdan Iacob
+                    </p>
+                </div>
+            </div>
+            <!-- end name -->
+
+            <!-- address -->
+            <div class="personal-info-item">
+                <div class="key">
+                    Address:
+                </div>
+                <div class="value">
+                    <p>
+                        Newport, Wales
+                    </p>
+                </div>
+            </div>
+            <!-- end address -->
+
+            <!-- phone number -->
+            <div class="personal-info-item">
+                <div class="key">
+                    Phone:
+                </div>
+                <div class="value">
+                    <p>
+                        (UK +44) 07824489630
+                    </p>
+                </div>
+            </div>
+            <!-- end phone number -->
+
+            <!-- email -->
+            <div class="personal-info-item">
+                <div class="key">
+                    Email:
+                </div>
+                <div class="value">
+                    <p>
+                        bogdan-iacob@hotmail.com
+                    </p>
+                </div>
+            </div>
+            <!-- end email -->
+        </div>
+        <!-- end personal information -->
+
+        <!-- three reasons to hire me -->
         <div class="col-md-8 bg-color-three-reasons section-column">
             <div class="row">
                 <div class="col">
@@ -57,7 +118,7 @@
                 </div>
             </div>
         </div>
+        <!-- end three reasons -->
     </div>
 </section>
-<!-- end three reasons -->
 {% endblock %}
