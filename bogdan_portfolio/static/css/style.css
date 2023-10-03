@@ -93,6 +93,15 @@ ul li {
 } */
 /* end gap */
 
+.three-reasons-icon {
+    font-size: 2rem;
+    color: var(--color-orange);
+}
+
+.three-reasons-heading {
+    margin-bottom: 1rem;
+}
+
 /* *********************************** */
 /*              Footer                 */
 /* *********************************** */
