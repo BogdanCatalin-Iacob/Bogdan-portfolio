@@ -35,7 +35,7 @@ As a **(role)** I can **(capability)**, so that **(received benefit)**
     - Bootstrap framework will be used to make the website responsive on different devices and display organised content.
     All pages will be responsive and the layouts will change dependant on screen size. This is to ensure content flow is appealing, images are displayed properly and that the content is not shrunk side by side so small taht it is unreadable.<br>
 
-    - All pages will contain a Footer element with Social Media links. The icons used will be from [Font Awesome](https://fontawesome.com). There are references below in the Technologies section of this document.<br>
+    - All pages will contain a Footer element with Social Media links. The icons used in footer will be from [Devicon](https://devicon.dev). There are references below in the Technologies section of this document.<br>
 
 -   ### Design
     -   #### Colour Scheme
@@ -43,7 +43,8 @@ As a **(role)** I can **(capability)**, so that **(received benefit)**
     -   #### Typography
 
     -   #### Imagery
-        - Icons used for skills display are taken from [Devicon](https://devicon.dev)
+        - Icons used for skills display and social are taken from [Devicon](https://devicon.dev)
+        - Icons used in other parts of the website are taken from [Font Awesome](https://fontawesome.com)
 
     -   #### Wireframes
 
@@ -66,3 +67,5 @@ As a **(role)** I can **(capability)**, so that **(received benefit)**
 	    * Mozilla Firefox built in developer tools are used to inspect page elements and help debug issues with the site layout and test different CSS styles.
     * [Coolors](https://coolors.co/)
         * This was used to select color palette.
+    * [Font Awesome](https://fontawesome.com)
+        * This is used to insert icons throughout the website
