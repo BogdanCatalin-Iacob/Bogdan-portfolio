@@ -75,7 +75,7 @@ h6 {
 }
 
 /* close the gaps between skills cards */
-.list-inline-item:not(:last-child) {
+/* .list-inline-item:not(:last-child) {
     margin: 0;
 }
 
@@ -90,7 +90,7 @@ ul {
 ul li {
     font-size: 1rem;
     padding: 0;
-}
+} */
 /* end gap */
 
 /* *********************************** */
