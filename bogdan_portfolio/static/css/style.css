@@ -106,7 +106,7 @@ ul li {
     margin-bottom: 1rem;
 }
 
-/* .personal-info-item {
+.personal-info-item {
     margin-bottom: 1.1rem;
     display: block;
     clear: both;
@@ -136,7 +136,7 @@ ul li {
 .personal-info-item .value {
     position: relative;
     width: 60%;
-} */
+}
 
 /* *********************************** */
 /*              Footer                 */
