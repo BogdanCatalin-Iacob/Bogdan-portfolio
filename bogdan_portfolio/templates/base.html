@@ -62,6 +62,23 @@
         <!--end navbar-->
     </header>
 
+    <!-- profile header -->
+    <section>
+        <div class="row g-0">
+            <img src="{{ url_for('static', filename='images/bogdan_no_background.webp') }}" alt="Image of Bogdan Iacob"
+                class="col-md-4 profile-photo">
+            <div class="col-md-8">
+                <div class="row g-0 bg-color-name-title">
+                    <div class="col heading">
+                        <h1 class="name">Bogdan Iacob</h1>
+                        <h2 class="title">Full Stack Developer</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end profile header -->
+
     <!-- main content -->
     <main>
         {% block content %}
@@ -124,5 +141,4 @@
         </div>
     </footer>
 </body>
-
 </html>
