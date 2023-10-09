@@ -15,3 +15,11 @@ def home():
         skills = json.load(skills_file)
 
     return render_template('home.html', skills=skills)
+
+
+@app.route('/projects')
+def projects():
+    '''
+    Displays created projects
+    '''
+    return render_template('projects.html')
