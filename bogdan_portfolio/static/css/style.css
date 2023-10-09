@@ -112,6 +112,10 @@ ul li {
     clear: both;
 }
 
+.bg-color-personal-info {
+    background-color: var(--color-green);
+}
+
 .personal-info-item .key,
 .personal-info-item .value {
     padding-right: .5rem;
