@@ -22,4 +22,7 @@ def projects():
     '''
     Displays created projects
     '''
-    return render_template('projects.html')
+    with open('projects.json', 'r', encoding='utf-8') as projects_file:
+        apps = json.load(projects_file)
+
+    return render_template('projects.html', apps=apps)
