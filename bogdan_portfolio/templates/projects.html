@@ -3,28 +3,44 @@
 {% block content %}
 <div class="container">
     {% for app in apps['projects'] %}
-    <!-- <div class="row my-5">
-        <h3 class="col-12 text-center mb-2">{{ app.name }}</h3>
-        <div class="col-12 col-md-6">
-            <img class="w-100 shadow-lg" src="static/{{ app.img }}" alt="{{ app.name }}">    
-        </div>
-        <div class="col-12 col-md-6 text-center align-center">{{ app.description }}</div>
-    </div> -->
     <div class="container">
-        <div class="card my-3">
-            <div class="row g-0">
+        <!-- project card -->
+        <div class="card my-3 shadow">
+            <h3 class="card-title text-center my-3">{{ app.name }}</h3>
+            <div class="row g-0 d-flex flex-column-reverse flex-md-row">
+                <!-- project image -->
                 <div class="col-md-6">
-                    <img src="static/{{ app.img }}" class="img-fluid rounded-start shadow-lg my-3" alt="{{ app.name }}">
+                    <img src="static/{{ app.img }}" class="img-fluid rounded-start shadow"
+                        alt="{{ app.name }}">
                 </div>
+                <!-- end image -->
+
+                <!-- project name and description -->
                 <div class="col-md-6">
-                    <div class="card-body">
-                        <h3 class="card-title">{{ app.name }}</h3>
-                        <p class="card-text">{{ app.description }}.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <div class="card-body text-center">
+                        
+                        <p class="card-text">{{ app.description }}</p>
+                        <a href="{{ app.github }}" target="_blank"
+                            aria-label="Open github page for {{ app.name }} app.">Github</a>
+                        <p class="card-text">Technologies:
+                            <small class="text-body-secondary">
+                                <!-- display '/' after each tag -->
+                                {% for tag in app.tags %}
+                                    {% if not loop.last %}
+                                        {{ tag }} /
+                                    {% else %}
+                                        {{ tag }}
+                                    {% endif %}
+                                {% endfor %}
+                                <!-- end tag -->
+                            </small>
+                        </p>
                     </div>
                 </div>
+                <!-- end name and description -->
             </div>
         </div>
+        <!-- end project card -->
     </div>
     {% endfor %}
 </div>
