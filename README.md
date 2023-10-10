@@ -72,6 +72,8 @@ As a **(role)** I can **(capability)**, so that **(received benefit)**
         * This was used to select color palette.
     * [Font Awesome](https://fontawesome.com)
         * This is used to insert icons throughout the website.
+    * [Devicon](https://devicon.dev)
+        * This is used to insert social icons in footer.
 -   ## Depolyment
     This project was developed using [VS Code](https://code.visualstudio.com/). The code was committed to [Git](https://git-scm.com) and pushed to [GitHub](https://github.com) using the terminal.
 
