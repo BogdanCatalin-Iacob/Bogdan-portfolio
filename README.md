@@ -28,7 +28,8 @@ As a **(role)** I can **(capability)**, so that **(received benefit)**
 | 1 |   Owner   | Display my skills  | Show them to others  |
 | 2 |   Owner   | Display my projects  | Show the to others  |
 | 3 |   Owner   | Upload my CV  | Make it available for download  |
-| 4 |   User   | Easily get in contact   | Ask questions  |
+| 4 |   User    | Easily get in contact   | Ask questions  |
+| 5 |   User    | Easily find examples of completed work | Have an idea about the skills |
 
 -   ### Structure
 
