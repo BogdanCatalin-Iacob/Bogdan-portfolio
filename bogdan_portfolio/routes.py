@@ -26,3 +26,11 @@ def projects():
         apps = json.load(projects_file)
 
     return render_template('projects.html', apps=apps)
+
+
+@app.route('/contact')
+def contact():
+    '''
+    Contact form to get in contact by sending email
+    '''
+    return render_template('contact.html')
