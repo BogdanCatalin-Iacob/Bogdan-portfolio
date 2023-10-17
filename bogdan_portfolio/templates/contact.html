@@ -1,1 +1,33 @@
 {% extends "base.html" %}
+
+{% block content %}
+<!-- contact form -->
+    <form action="{{ url_for('contact') }}" method="POST">
+        <!-- csrf_token -->
+        {{ form.hidden_tag() }}
+        <!-- name input -->
+        <p>
+            {{ form.name.label }}
+            {{ form.name }}
+        </p>
+        <!-- end name input -->
+        <br>
+        <!-- email input -->
+        <p>
+            {{ form.email.label }}
+            {{ form.email }}
+        </p>
+        <!-- end email input -->
+        <br>
+        <!-- message input -->
+        <p>
+            {{ form.message.label }}
+            {{ form.message }}
+        </p>
+        <!-- end message input -->
+        <p>
+            {{ form.submit }}
+        </p>
+    </form>
+    <!-- end contact form -->
+{% endblock %}
