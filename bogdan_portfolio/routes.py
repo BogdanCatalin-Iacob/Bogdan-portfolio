@@ -4,6 +4,7 @@ App's logic
 import json
 from flask import render_template
 from . import app
+from .forms import ContactEmail
 
 
 @app.route('/')
@@ -28,9 +29,10 @@ def projects():
     return render_template('projects.html', apps=apps)
 
 
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
     '''
     Contact form to get in contact by sending email
     '''
-    return render_template('contact.html')
+    form = ContactEmail()
+    return render_template('contact.html', form=form)
