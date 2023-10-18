@@ -1,35 +1,44 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="center-form">
-<!-- contact form -->
-    <form action="{{ url_for('contact') }}" method="POST">
-        <!-- csrf_token -->
-        {{ form.hidden_tag() }}
-        <!-- name input -->
-        <p>
-            {{ form.name.label(class="form-label") }}
-            {{ form.name(class="form-control") }}
-        </p>
-        <!-- end name input -->
-        <br>
-        <!-- email input -->
-        <p>
-            {{ form.email.label(class="form-label") }}
-            {{ form.email(class="form-control") }}
-        </p>
-        <!-- end email input -->
-        <br>
-        <!-- message input -->
-        <p>
-            {{ form.message.label(class="form-label") }}
-            {{ form.message(class="form-control") }}
-        </p>
-        <!-- end message input -->
-        <p>
-            {{ form.submit(class="btn btn-primary") }}
-        </p>
-    </form>
-    <!-- end contact form -->
+<div class="container">
+    <div class="row">
+        <div class="col d-flex flex-column align-items-center">
+            <h3>Got a project in mind?</h3>
+            <h4>Let's work together!</h4>
+            <div class="center-form">
+                <!-- contact form -->
+                <form action="{{ url_for('contact') }}" method="POST">
+                    <!-- csrf_token -->
+                    {{ form.hidden_tag() }}
+                    <!-- name input -->
+                    <p>
+                        {{ form.name.label(class="form-label") }}
+                        {{ form.name(class="form-control") }}
+                    </p>
+                    <!-- end name input -->
+                    
+                    <!-- email input -->
+                    <p>
+                        {{ form.email.label(class="form-label") }}
+                        {{ form.email(class="form-control") }}
+                    </p>
+                    <!-- end email input -->
+                    
+                    <!-- message input -->
+                    <p>
+                        {{ form.message.label(class="form-label") }}
+                        {{ form.message(class="form-control") }}
+                    </p>
+                    <!-- end message input -->
+                    <p class="text-center">
+                        {{ form.submit(class="btn btn-primary") }}
+                    </p>
+                </form>
+                <!-- end contact form -->
+            </div>
+        </div>
+    </div>
 </div>
+
 {% endblock %}
