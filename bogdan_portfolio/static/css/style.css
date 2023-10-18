@@ -147,9 +147,9 @@ ul li {
 /* *********************************** */
 
 .center-form {
-    padding-left: 10px;
+    padding-top: 10px;
     margin: 0 auto;
-    max-width: 70%;
+    width: 100%;
 }
 
 /* *********************************** */
@@ -196,4 +196,16 @@ footer {
 
 #footer-details {
     padding-top: .3rem;
+}
+
+/* *********************************** */
+/*              Media query            */
+/* *********************************** */
+
+@media(min-width:992px){
+    .center-form {
+        padding-top: 30px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
 }
