@@ -1,33 +1,35 @@
 {% extends "base.html" %}
 
 {% block content %}
+<div class="center-form">
 <!-- contact form -->
     <form action="{{ url_for('contact') }}" method="POST">
         <!-- csrf_token -->
         {{ form.hidden_tag() }}
         <!-- name input -->
         <p>
-            {{ form.name.label }}
-            {{ form.name }}
+            {{ form.name.label(class="form-label") }}
+            {{ form.name(class="form-control") }}
         </p>
         <!-- end name input -->
         <br>
         <!-- email input -->
         <p>
-            {{ form.email.label }}
-            {{ form.email }}
+            {{ form.email.label(class="form-label") }}
+            {{ form.email(class="form-control") }}
         </p>
         <!-- end email input -->
         <br>
         <!-- message input -->
         <p>
-            {{ form.message.label }}
-            {{ form.message }}
+            {{ form.message.label(class="form-label") }}
+            {{ form.message(class="form-control") }}
         </p>
         <!-- end message input -->
         <p>
-            {{ form.submit }}
+            {{ form.submit(class="btn btn-primary") }}
         </p>
     </form>
     <!-- end contact form -->
+</div>
 {% endblock %}
