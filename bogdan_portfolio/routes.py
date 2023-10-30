@@ -3,8 +3,9 @@ App's logic
 '''
 import json
 from flask import render_template
-from . import app
+from . import app, mail
 from .forms import ContactEmail
+from flask_mail import Message
 
 
 @app.route('/')
@@ -35,4 +36,13 @@ def contact():
     Contact form to get in contact by sending email
     '''
     form = ContactEmail()
+
+    msg = Message(
+        'Hello',
+        sender='bogdancatalin.iacob@gmail.com',
+        recipients=['bogdancatalin.iacob@gmail.com'])
+    msg.body = 'This is a test email'
+    mail.send(msg)
+    print('sent')
+
     return render_template('contact.html', form=form)
