@@ -202,10 +202,15 @@ footer {
 /*              Media query            */
 /* *********************************** */
 
-@media(min-width:992px){
+@media screen and (min-width: 765px){
+    .center-form {
+        max-width: 80%;
+    }
+}
+
+@media(min-width: 1025px){
     .center-form {
         padding-top: 30px;
-        margin: 0 auto;
         max-width: 50%;
     }
 }
