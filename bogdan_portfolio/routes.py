@@ -2,7 +2,7 @@
 App's logic
 '''
 import json
-from flask import render_template
+from flask import render_template, request, flash, redirect
 from . import app, mail
 from .forms import ContactEmail
 from flask_mail import Message
@@ -37,12 +37,19 @@ def contact():
     '''
     form = ContactEmail()
 
-    msg = Message(
-        'Hello',
-        sender='bogdancatalin.iacob@gmail.com',
-        recipients=['bogdancatalin.iacob@gmail.com'])
-    msg.body = 'This is a test email'
-    mail.send(msg)
-    print('sent')
+    if request.method == 'POST':
+        user_name = request.form.get('name')
+        user_email = request.form.get('email')
+        user_msg = request.form.get('message')
+        msg = Message(
+            f'From {user_name}',
+            sender='bogdan-iacob@hotmail.com',
+            recipients=['bogdancatalin.iacob@gmail.com'])
+
+        msg.body = user_msg
+        msg.reply_to = user_email
+        mail.send(msg)
+
+        return render_template('email_confirmation.html')
 
     return render_template('contact.html', form=form)
