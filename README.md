@@ -60,6 +60,8 @@ As a **(role)** I can **(capability)**, so that **(received benefit)**
 	    * This project uses HTML as the main language used to complete the structure of the Website.
     * CSS
         * This project uses custom written CSS to style the Website.
+    * Python / Flask
+    	* This project uses Python / Flask as backend technology
     * [Bootstrap](https://getbootstrap.com)
         * This is used as frontend framework to display the content in an organized way.
     * [Google Fonts](https://fonts.google.com/)
