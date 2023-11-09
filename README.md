@@ -40,6 +40,8 @@ As a **(role)** I can **(capability)**, so that **(received benefit)**
 
     - All pages will contain a Footer element with Social Media links. The icons used in footer will be from [Devicon](https://devicon.dev). There are references below in the Technologies section of this document.<br>
 
+    - Projects page will display my finished projects and their description.<br>
+
     - Contact form will display a confirmation message when the form is submited and a email will be sent to me with the message and contact email.<br>
 
 -   ### Design
